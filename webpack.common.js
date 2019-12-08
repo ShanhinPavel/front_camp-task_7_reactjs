@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackRootPlugin = require("html-webpack-root-plugin");
 
 module.exports = {
   entry: {
@@ -15,13 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"]
-          }
+          loader: "babel-loader"
         }
       },
       {
@@ -31,7 +29,9 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              modules: true
+              modules: {
+                localIdentName: "[name]__[local]"
+              }
             }
           }
         ]
@@ -40,14 +40,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "News app",
+      title: "Film app",
       meta: {
         viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
-      },
-      base: {
-        id: "root"
       }
     }),
+    new HtmlWebpackRootPlugin(),
     new CleanWebpackPlugin()
   ]
 };
