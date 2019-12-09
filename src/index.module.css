@@ -1,9 +1,10 @@
-@import "~normalize.css/normalize.css";
+@import '~normalize.css/normalize.css';
 
 html,
 body {
   height: 100%;
-  font-family: serif;
+  font-family: sans-serif;
+  background-color: #2e2e2e;
 }
 
 input,

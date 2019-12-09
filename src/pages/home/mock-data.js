@@ -1,47 +1,92 @@
 export const filmsData = [
   {
-    id: 1,
-    imgUrl: "https://bugaga.ru/uploads/posts/2009-03/1237438740_movies_2.jpg",
-    title: "Oceans nineteen",
-    genre: "Comedy",
-    releaseData: 2007
+    id: 447365,
+    title: "Guardians of the Galaxy Vol. 3",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 9,
+    release_date: "2020-05-01",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg",
+    overview: "The third film based on Marvel's Guardians of the Galaxy.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Action", "Adventure", "Science Fiction"],
+    runtime: null
   },
   {
-    id: 2,
-    imgUrl:
-      "https://bugaga.ru/uploads/posts/2009-03/thumbs/1237438797_movies_g.jpg",
-    title: "70 year old virgin",
-    genre: "Drama",
-    releaseData: 2003
+    id: 424785,
+    title: "Transformers 7",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 0,
+    release_date: "2019-06-26",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/432BowXw7a4fWXSONxBaFKqvW4f.jpg",
+    overview: "Plot unknown.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Science Fiction", "Action", "Adventure"],
+    runtime: null
   },
   {
-    id: 3,
-    imgUrl: "https://bugaga.ru/uploads/posts/2009-03/1237438740_movies_2.jpg",
-    title: "Oceans nineteen",
-    genre: "Comedy",
-    releaseData: 2007
+    id: 299534,
+    title: "Untitled Avengers",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 9,
+    release_date: "2019-04-24",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/aMETsaNNcDc6g5ZatQtVbySnSaA.jpg",
+    overview: "The culmination of the Marvel Cinematic Universe.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Action", "Adventure", "Science Fiction"],
+    runtime: null
   },
   {
-    id: 4,
-    imgUrl:
-      "https://bugaga.ru/uploads/posts/2009-03/thumbs/1237438797_movies_g.jpg",
-    title: "70 year old virgin",
-    genre: "Drama",
-    releaseData: 2003
+    id: 447365,
+    title: "Guardians of the Galaxy Vol. 3",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 9,
+    release_date: "2020-05-01",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/ldoY4fTZkGISMidNw60GHoNdgP8.jpg",
+    overview: "The third film based on Marvel's Guardians of the Galaxy.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Action", "Adventure", "Science Fiction"],
+    runtime: null
   },
   {
-    id: 5,
-    imgUrl: "https://bugaga.ru/uploads/posts/2009-03/1237438740_movies_2.jpg",
-    title: "Oceans nineteen",
-    genre: "Comedy",
-    releaseData: 2007
+    id: 424785,
+    title: "Transformers 7",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 0,
+    release_date: "2019-06-26",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/432BowXw7a4fWXSONxBaFKqvW4f.jpg",
+    overview: "Plot unknown.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Science Fiction", "Action", "Adventure"],
+    runtime: null
   },
   {
-    id: 6,
-    imgUrl:
-      "https://bugaga.ru/uploads/posts/2009-03/thumbs/1237438797_movies_g.jpg",
-    title: "70 year old virgin",
-    genre: "Drama",
-    releaseData: 2003
+    id: 299534,
+    title: "Untitled Avengers",
+    tagline: "",
+    vote_average: 0,
+    vote_count: 9,
+    release_date: "2019-04-24",
+    poster_path:
+      "https://image.tmdb.org/t/p/w500/aMETsaNNcDc6g5ZatQtVbySnSaA.jpg",
+    overview: "The culmination of the Marvel Cinematic Universe.",
+    budget: 0,
+    revenue: 0,
+    genres: ["Action", "Adventure", "Science Fiction"],
+    runtime: null
   }
 ];

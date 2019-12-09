@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import { SearchForm, Title, FilmInfoCard } from "../../components";
-import styles from "./home.module.css";
-import { filmsData } from "./mock-data";
+import { SearchForm, Title, FilmInfoCard, Logo } from '../../components';
+import styles from './home.module.css';
+import { filmsData } from './mock-data';
 
-const HOME_PAGE_TITLE = "FIND YOUR MOVIE";
+const HOME_PAGE_TITLE = 'FIND YOUR MOVIE';
 
 export class HomePage extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export class HomePage extends Component {
     };
   }
   clickButton = () => {
-    console.log("I am clicked");
+    console.log('I am clicked');
   };
 
   createFilmInfoCards = filmsInfo => {
@@ -33,14 +33,13 @@ export class HomePage extends Component {
     return (
       <div className={styles.container}>
         <div className={styles.header}>
+          <Logo />
           <Title content={HOME_PAGE_TITLE} />
           <SearchForm />
         </div>
         <div className={styles.contentSection}>{filmsInfoCards}</div>
         <div className={styles.footer}>
-          <p className={styles.companyName}>
-            <span>netflix</span>Roulette
-          </p>
+          <Logo />
         </div>
       </div>
     );
