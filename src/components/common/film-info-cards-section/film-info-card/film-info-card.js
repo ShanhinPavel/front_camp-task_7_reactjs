@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './film-info-card.module.css';
-import { concatGenres, getReleaseYear } from '../../utils';
+import { concatGenres, getReleaseYear } from '../../../../utils';
 
 export const FilmInfoCard = props => {
   const { filmInfo } = props;
@@ -25,25 +25,16 @@ export const FilmInfoCard = props => {
 };
 
 FilmInfoCard.propTypes = {
-  data: [
-    {
-      id: PropTypes.number,
-      title: PropTypes.string,
-      tagline: PropTypes.string,
-      vote_average: PropTypes.number,
-      vote_count: PropTypes.number,
-      release_date: PropTypes.string,
-      poster_path: PropTypes.string,
-      overview: PropTypes.string,
-      budget: PropTypes.number,
-      revenue: PropTypes.number,
-      runtime: PropTypes.number,
-      genres: PropTypes.array[PropTypes.string]
-    }
-  ],
-  total: PropTypes.number,
-  offset: PropTypes.number,
-  limit: PropTypes.number
+  id: PropTypes.number,
+  title: PropTypes.string,
+  tagline: PropTypes.string,
+  vote_average: PropTypes.number,
+  vote_count: PropTypes.number,
+  release_date: PropTypes.string,
+  poster_path: PropTypes.string,
+  overview: PropTypes.string,
+  budget: PropTypes.number,
+  revenue: PropTypes.number,
+  runtime: PropTypes.number,
+  genres: PropTypes.arrayOf(PropTypes.string)
 };
-
-export default FilmInfoCard;

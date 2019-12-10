@@ -1,0 +1,7 @@
+.container {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://total.kz/storage/6d/6d5799b94a5bf9ee228bad00f9481ee3.jpg');
+  max-width: 100%;
+  object-fit: cover;
+}

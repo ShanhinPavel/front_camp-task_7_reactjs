@@ -1,4 +1,10 @@
 export { Title } from './title';
-export { TabButton } from './tab-button';
 export { Poster } from './poster';
 export { Logo } from './logo';
+export { ErrorBoundary } from './error';
+export {
+  TabButtonSectionTitles,
+  TabButtonSection
+} from './tab-buttons-section';
+export { Footer } from './footer';
+export { FilmInfoCardsSection } from './film-info-cards-section';

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  color: #ffffff;
+  width: 40%;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  margin: 0;
+}
