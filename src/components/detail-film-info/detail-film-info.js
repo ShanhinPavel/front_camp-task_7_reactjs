@@ -1,21 +1,54 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export const DetailFilmInfo = () => {
-  return <div></div>;
+import { Header } from './header';
+import styles from './detail-film-info.module.css';
+import { FilmInfoCardsSection, Footer } from '../common';
+
+export const DetailFilmInfo = props => {
+  const { filmsTheSameGenre, filmInfo } = props;
+
+  return (
+    <div className={styles.container}>
+      <Header filmInfo={filmInfo} />
+      <FilmInfoCardsSection
+        filmsInfo={filmsTheSameGenre}
+        onClickTabButton={() => {}}
+      />
+      <Footer />
+    </div>
+  );
 };
 
-DetailFilmInfopropTypes = {
-  id: 0,
-  title: PropTypes.string,
-  tagline: PropTypes.string,
-  vote_average: PropTypes.number,
-  vote_count: PropTypes.number,
-  release_date: PropTypes.string,
-  poster_path: PropTypes.string,
-  overview: PropTypes.string,
-  budget: PropTypes.number,
-  revenue: PropTypes.number,
-  runtime: PropTypes.number,
-  genres: PropTypes.array[PropTypes.string]
+DetailFilmInfo.propTypes = {
+  filmInfo: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    tagline: PropTypes.string,
+    vote_average: PropTypes.number,
+    vote_count: PropTypes.number,
+    release_date: PropTypes.string,
+    poster_path: PropTypes.string,
+    overview: PropTypes.string,
+    budget: PropTypes.number,
+    revenue: PropTypes.number,
+    runtime: PropTypes.number,
+    genres: PropTypes.arrayOf(PropTypes.string)
+  }),
+  filmsTheSameGenre: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number,
+      title: PropTypes.string,
+      tagline: PropTypes.string,
+      vote_average: PropTypes.number,
+      vote_count: PropTypes.number,
+      release_date: PropTypes.string,
+      poster_path: PropTypes.string,
+      overview: PropTypes.string,
+      budget: PropTypes.number,
+      revenue: PropTypes.number,
+      genres: PropTypes.arrayOf(PropTypes.string),
+      runtime: PropTypes.number
+    })
+  )
 };

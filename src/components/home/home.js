@@ -5,15 +5,13 @@ import { Footer, FilmInfoCardsSection } from '../common';
 import { Header } from './header';
 import styles from './home.module.css';
 
-export const Home = props => {
-  const {
-    filmsInfo,
-    onClickTabButton,
-    textInputValue,
-    changeTextInputValue,
-    onClickSubmitButton
-  } = props;
-
+export const Home = ({
+  filmsInfo,
+  onClickTabButton,
+  textInputValue,
+  changeTextInputValue,
+  onClickSubmitButton
+}) => {
   return (
     <div className={styles.container}>
       <Header

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { Home } from '../../components';
-import { filmsData } from './mock-data';
+import { filmsData } from '../mock-data';
 
 export class HomePage extends Component {
   constructor(props) {
