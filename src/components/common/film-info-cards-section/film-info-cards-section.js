@@ -20,14 +20,16 @@ export const FilmInfoCardsSection = props => {
 
   return (
     <>
-      <TabButtonSection
-        sectionTitle={TabButtonSectionTitles.SORT_BY}
-        tabButtonsTitles={[
-          TabButtonSectionTitles.REALISE_DATE,
-          TabButtonSectionTitles.RAITING
-        ]}
-        onClickTabButton={onClickTabButton}
-      />
+      <div className={styles.sortingSection}>
+        <TabButtonSection
+          sectionTitle={TabButtonSectionTitles.SORT_BY}
+          tabButtonsTitles={[
+            TabButtonSectionTitles.REALISE_DATE,
+            TabButtonSectionTitles.RAITING
+          ]}
+          onClickTabButton={onClickTabButton}
+        />
+      </div>
       {filmsInfoCards && (
         <div className={styles.container}>{filmsInfoCards}</div>
       )}

@@ -10,7 +10,7 @@ export const TabButtonSectionTitles = {
   SEARCH_BY: 'SEARCH BY',
 
   SORT_BY: 'SORT BY',
-  REALISE_DATE: 'RELEASE_DATE',
+  REALISE_DATE: 'RELEASE DATE',
   RAITING: 'RAITING'
 };
 

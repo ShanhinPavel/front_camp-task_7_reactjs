@@ -4,3 +4,9 @@
   justify-content: space-evenly;
   background-color: #232323;
 }
+
+.sortingSection {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 60px;
+}

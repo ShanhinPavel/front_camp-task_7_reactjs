@@ -22,21 +22,26 @@ export const Header = props => {
 
   return (
     <div className={styles.container}>
-      <Logo />
-      <Title content={FIND_YOUR_MOVIE} />
-      <SearchForm
-        onChangeTextInputValue={changeInputTextFieldValue}
-        textInputValue={textInputValue}
-        onClickSubmitButton={onClickSubmitButton}
-      />
-      <TabButtonSection
-        sectionTitle={TabButtonSectionTitles.SEARCH_BY}
-        tabButtonsTitles={[
-          TabButtonSectionTitles.GENRE,
-          TabButtonSectionTitles.TITLE
-        ]}
-        onClickTabButton={onClickTabButton}
-      />
+      <div className={styles.logoContainer}>
+        <Logo />
+      </div>
+
+      <div className={styles.searchContainer}>
+        <Title content={FIND_YOUR_MOVIE} />
+        <SearchForm
+          onChangeTextInputValue={changeInputTextFieldValue}
+          textInputValue={textInputValue}
+          onClickSubmitButton={onClickSubmitButton}
+        />
+        <TabButtonSection
+          sectionTitle={TabButtonSectionTitles.SEARCH_BY}
+          tabButtonsTitles={[
+            TabButtonSectionTitles.GENRE,
+            TabButtonSectionTitles.TITLE
+          ]}
+          onClickTabButton={onClickTabButton}
+        />
+      </div>
     </div>
   );
 };
