@@ -5,14 +5,16 @@ import { HomePage, FilmDetailsPage } from './pages';
 import { Routes } from './services';
 import { ErrorBoundary } from './components';
 
-export const Router = () => {
-  return (
-    <ErrorBoundary>
-      <Switch>
-        <Route path={Routes.home} component={HomePage} exact />
-        <Route path={Routes.filmDetail} component={FilmDetailsPage} exact />
-        <Route path={Routes.error} component={HomePage} exact />
-      </Switch>
-    </ErrorBoundary>
-  );
-};
+export class Router extends React.Component {
+  render() {
+    return (
+      <ErrorBoundary>
+        <Switch>
+          <Route path={Routes.home} component={FilmDetailsPage} exact />
+          <Route path={Routes.filmDetail} component={FilmDetailsPage} exact />
+          <Route path={Routes.error} component={HomePage} exact />
+        </Switch>
+      </ErrorBoundary>
+    );
+  }
+}

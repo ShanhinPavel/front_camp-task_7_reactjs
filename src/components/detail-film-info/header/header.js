@@ -9,11 +9,12 @@ export const Header = props => {
   const {
     poster_path,
     title,
-    vote_average,
-    runtime,
+    vote_count,
+    runtime = 200,
     release_date,
     overview
   } = props.filmInfo;
+
   const releaseYear = getReleaseYear(release_date);
 
   return (
@@ -27,13 +28,13 @@ export const Header = props => {
         <div className={styles.generalInfo}>
           <div className={styles.titleAndRaiting}>
             <Title content={title} />
-            <p className={styles.raiting}>{vote_average}</p>
+            <p className={styles.raiting}>{vote_count}</p>
           </div>
           <div className={styles.durationAndReleaseYear}>
-            <p className={styles.duration}>{runtime}</p>
             <p className={styles.releaseYear}>{releaseYear}</p>
+            <p className={styles.duration}>{!runtime && '200'} min</p>
           </div>
-          <div className={styles.description}>{overview}</div>
+          <p className={styles.description}>{overview}</p>
         </div>
       </div>
     </div>
