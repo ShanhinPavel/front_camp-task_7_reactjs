@@ -10,7 +10,7 @@ export class Router extends React.Component {
     return (
       <ErrorBoundary>
         <Switch>
-          <Route path={Routes.home} component={FilmDetailsPage} exact />
+          <Route path={Routes.home} component={HomePage} exact />
           <Route path={Routes.filmDetail} component={FilmDetailsPage} exact />
           <Route path={Routes.error} component={HomePage} exact />
         </Switch>

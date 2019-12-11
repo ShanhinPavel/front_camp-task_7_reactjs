@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Logo, Poster, Title } from '../../common';
-import styles from './header.module.css';
+import styles from './header-detail-film-info.module.css';
 import { getReleaseYear } from '../../../utils';
 
-export const Header = props => {
+export const DetailFilmInfoHeader = props => {
   const {
     poster_path,
     title,
@@ -41,7 +41,7 @@ export const Header = props => {
   );
 };
 
-Header.propTypes = {
+DetailFilmInfoHeader.propTypes = {
   filmInfo: PropTypes.shape({
     id: PropTypes.number,
     title: PropTypes.string,

@@ -11,3 +11,9 @@
 .companyName {
   color: #f65261;
 }
+
+.sortingSection {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 60px;
+}

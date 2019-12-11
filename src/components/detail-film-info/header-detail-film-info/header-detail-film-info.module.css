@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 650px;
+  min-height: 650px;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url('https://total.kz/storage/6d/6d5799b94a5bf9ee228bad00f9481ee3.jpg');
   max-width: 100%;

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Header } from './header';
+import { Header } from './header-detail-film-info';
 import styles from './detail-film-info.module.css';
 import { FilmInfoCardsSection, Footer } from '../common';
 
