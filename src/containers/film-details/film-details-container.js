@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { DetailFilmInfo } from '../../components';
 import { filmsData } from '../mock-data';
 
-export class FilmDetailsPage extends Component {
+export class FilmDetailsContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -26,7 +26,7 @@ export class FilmDetailsPage extends Component {
   }
 }
 
-FilmDetailsPage.propTypes = {
+FilmDetailsContainer.propTypes = {
   id: PropTypes.number,
   title: PropTypes.string,
   tagline: PropTypes.string,

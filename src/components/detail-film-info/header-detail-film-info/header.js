@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import { Logo, Poster, Title } from '../../common';
 import styles from './header-detail-film-info.module.css';
 import { getReleaseYear } from '../../../utils';
+import { Routes } from '../../../services';
 
 export const DetailFilmInfoHeader = props => {
   const {
@@ -21,7 +25,9 @@ export const DetailFilmInfoHeader = props => {
     <div className={styles.container}>
       <div className={styles.logoAndSearchButtonContainer}>
         <Logo />
-        <button className={styles.searchIcon}>search</button>
+        <Link to={{ pathname: Routes.home }}>
+          <FontAwesomeIcon icon={faSearch} size="3x" color="#f65261" />
+        </Link>
       </div>
       <div className={styles.filmInfoContainer}>
         <Poster poster_path={poster_path} title={title} />

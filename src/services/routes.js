@@ -3,3 +3,7 @@ export const Routes = {
   filmDetail: '/film/:filmId',
   error: '/error'
 };
+
+export const generatePathToFilmDetails = filmId => {
+  return `/film/${filmId}`;
+};

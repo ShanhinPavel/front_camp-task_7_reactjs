@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Home } from '../../components';
 import { filmsData } from '../mock-data';
 
-export class HomePage extends Component {
+export class HomeContainer extends Component {
   constructor(props) {
     super(props);
 

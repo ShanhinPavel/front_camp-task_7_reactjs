@@ -8,6 +8,10 @@
   background-color: #424242;
 }
 
-.companyName {
-  color: #f65261;
+.filmsCardsSortingSummary {
+  display: flex;
+  min-height: 60px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
 }

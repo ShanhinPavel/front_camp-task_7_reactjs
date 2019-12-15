@@ -3,7 +3,12 @@ import PropTypes from 'prop-types';
 
 import { Header } from './header-detail-film-info';
 import styles from './detail-film-info.module.css';
-import { FilmInfoCardsSection, Footer } from '../common';
+import {
+  FilmInfoCardsSection,
+  Footer,
+  FilmsCardsSummary,
+  FilmsCardSummaryType
+} from '../common';
 
 export const DetailFilmInfo = props => {
   const { filmsTheSameGenre, filmInfo } = props;
@@ -11,6 +16,12 @@ export const DetailFilmInfo = props => {
   return (
     <div className={styles.container}>
       <Header filmInfo={filmInfo} />
+      <div className={styles.filmsCardsSortingSummary}>
+        <FilmsCardsSummary
+          summaryType={FilmsCardSummaryType.GENRE}
+          filmsSummary={filmInfo.genres[0]}
+        />
+      </div>
       <FilmInfoCardsSection
         filmsInfo={filmsTheSameGenre}
         onClickTabButton={() => {}}

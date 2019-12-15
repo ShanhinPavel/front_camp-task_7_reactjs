@@ -8,3 +8,4 @@ export {
 } from './tab-buttons-section';
 export { Footer } from './footer';
 export { FilmInfoCardsSection } from './film-info-cards-section';
+export { FilmsCardsSummary, FilmsCardSummaryType } from './film-cards-summary';

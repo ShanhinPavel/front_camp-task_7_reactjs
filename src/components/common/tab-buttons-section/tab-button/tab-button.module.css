@@ -16,3 +16,7 @@
   composes: main;
   border-radius: 0 5px 5px 0;
 }
+
+.button-active {
+  background-color: #f65261;
+}

@@ -29,6 +29,12 @@
   margin: 0;
 }
 
+.filmTitle {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .realizeData {
   padding: 5px;
   border: 1px solid #ffffff;
@@ -37,4 +43,5 @@
 
 .filmGenre {
   margin: 0;
+  font-size: 14px;
 }
