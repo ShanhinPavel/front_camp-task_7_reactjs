@@ -1,11 +1,11 @@
 import { httpMethods } from './http-methods';
 
-export const request = async (url, method = httpMethods.GET, data) => {
+export const request = async (url, method = httpMethods.GET, requestData) => {
   const requestBody = {
-    body: JSON.stringify(data),
+    body: JSON.stringify(requestData),
     headers: {
-      'Content-Type': 'text/plain'
-    }
+      'Content-Type': 'text/plain',
+    },
   };
 
   switch (method) {

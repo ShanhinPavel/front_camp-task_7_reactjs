@@ -1,3 +1,8 @@
-export {ADD_FILM_WITH_DETAILS, filmDetailsAction} from './film-details-action'
-export  {ADD_FILMS, filmsListAction} from './films-list.action'
-
+export { getFilmDetails } from './film-details-action';
+export {
+  getFilms,
+  clearTextInputValue,
+  getSearchType,
+  getSortType,
+  getTextInputValue,
+} from './films-list.action';

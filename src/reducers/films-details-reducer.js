@@ -1,11 +1,11 @@
-import {ADD_FILM_WITH_DETAILS} from '../actions'
+import { ADD_FILM_WITH_DETAILS } from '../constants';
 
-const initialfilmDetailsReducer = {}
+const initialfilmDetailsReducer = {};
 
-export const filmDetailsReducer = function(state = initialfilmDetailsReducer, action) {
+export const filmDetailsReducer = function (state = initialfilmDetailsReducer, action) {
   switch (action.type) {
     case ADD_FILM_WITH_DETAILS:
-      return {...state, ...action.filmWithDetails}
+      return { ...action.filmWithDetails };
   }
   return state;
-}
+};

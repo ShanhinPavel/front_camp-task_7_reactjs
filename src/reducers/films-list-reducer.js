@@ -1,9 +1,13 @@
-const initialfilmListReducer = []
+import {
+  ADD_FILMS, GET_SEARCH_TYPE, GET_TEXT_INPUT_VALUE, GET_SORT_TYPE,
+} from '../constants';
 
-export const filmListReducer = function(state = initialfilmListReducer, action) {
+const initialfilmListReducer = [];
+
+export const filmListReducer = function (state = initialfilmListReducer, action) {
   switch (action.type) {
-    case 'FILM_LIST_SUCCESS':
-      return [...state, ...action.films]
+    case ADD_FILMS:
+      return [...action.films];
   }
   return state;
-}
+};

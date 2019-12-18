@@ -1,9 +1,7 @@
 export const Routes = {
   home: '/',
   filmDetail: '/film/:filmId',
-  error: '/error'
+  error: '/error',
 };
 
-export const generatePathToFilmDetails = filmId => {
-  return `/film/${filmId}`;
-};
+export const generatePathToFilmDetails = (filmId) => `/film/${filmId}`;
